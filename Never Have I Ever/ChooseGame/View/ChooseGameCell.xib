@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChooseGameCell" customModule="Я_никогда_не" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="375"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="375"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6X-3q-SsK">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="375"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правда или Действие" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pF-lh-YzJ">
+                                <rect key="frame" x="22.5" y="28" width="250" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="sfj-cC-poO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="some description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BID-1G-SNB">
+                                <rect key="frame" x="20" y="97" width="255" height="183"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkX-iD-P3C">
+                                <rect key="frame" x="45" y="310" width="205" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Q6S-RY-7TL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Начать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="start:" destination="gTV-IL-0wX" eventType="touchUpInside" id="aiO-SX-JK1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="orangeYellow"/>
+                        <constraints>
+                            <constraint firstItem="0pF-lh-YzJ" firstAttribute="centerX" secondItem="H6X-3q-SsK" secondAttribute="centerX" id="Cbq-dQ-vAA"/>
+                            <constraint firstItem="0pF-lh-YzJ" firstAttribute="top" secondItem="H6X-3q-SsK" secondAttribute="top" constant="28" id="EdF-YG-ZS9"/>
+                            <constraint firstItem="BID-1G-SNB" firstAttribute="top" secondItem="0pF-lh-YzJ" secondAttribute="bottom" constant="40" id="Ihn-CU-tEx"/>
+                            <constraint firstAttribute="bottom" secondItem="BkX-iD-P3C" secondAttribute="bottom" constant="20" id="NTn-cM-sp8"/>
+                            <constraint firstAttribute="trailing" secondItem="BID-1G-SNB" secondAttribute="trailing" constant="20" id="hb4-Ei-ojo"/>
+                            <constraint firstItem="BkX-iD-P3C" firstAttribute="leading" secondItem="H6X-3q-SsK" secondAttribute="leading" constant="45" id="lGC-gq-xVW"/>
+                            <constraint firstItem="BID-1G-SNB" firstAttribute="leading" secondItem="H6X-3q-SsK" secondAttribute="leading" constant="20" id="lrS-9l-bbM"/>
+                            <constraint firstItem="BkX-iD-P3C" firstAttribute="top" secondItem="BID-1G-SNB" secondAttribute="bottom" constant="30" id="pGb-SF-DMj"/>
+                            <constraint firstAttribute="trailing" secondItem="BkX-iD-P3C" secondAttribute="trailing" constant="45" id="rCy-dh-sjy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="orangeYellow"/>
+            <constraints>
+                <constraint firstItem="H6X-3q-SsK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BYC-J1-SRo"/>
+                <constraint firstAttribute="trailing" secondItem="H6X-3q-SsK" secondAttribute="trailing" id="Psp-q1-Qf9"/>
+                <constraint firstAttribute="bottom" secondItem="H6X-3q-SsK" secondAttribute="bottom" id="QLJ-Gv-1y0"/>
+                <constraint firstItem="H6X-3q-SsK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mJP-o7-5JJ"/>
+            </constraints>
+            <size key="customSize" width="220" height="280"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descriptionLabel" destination="BID-1G-SNB" id="Vh1-WS-raE"/>
+                <outlet property="title" destination="0pF-lh-YzJ" id="bP7-nJ-9cl"/>
+            </connections>
+            <point key="canvasLocation" x="-23.913043478260871" y="55.245535714285715"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="orangeYellow">
+            <color red="0.96899998188018799" green="0.70999997854232788" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
