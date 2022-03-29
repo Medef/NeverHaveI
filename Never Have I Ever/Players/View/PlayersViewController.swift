@@ -10,29 +10,34 @@ import UIKit
 
 class PlayersViewController: UIViewController {
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet private weak var collectionView: UICollectionView! {
+        didSet {
+            PlayerCell.register(collectionView)
+        }
+    }
+    @IBOutlet private weak var playButton: UIButton! {
+        didSet {
+            playButton.layer.cornerRadius = 8
+        }
+    }
     
-    private var players: [String] = []
-    var choosenGame: GameType?
+    var viewModel: PlayersViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.register(UINib(nibName: PlayerCell.id, bundle: Bundle.main), forCellWithReuseIdentifier: PlayerCell.id)
-        playButton.layer.cornerRadius = 8
         removeBorder()
     }
     
     @IBAction func addPlayer(_ sender: UIButton) {
         let alert = UIAlertController(title: "Добавьте игрока", message: "", preferredStyle: .alert)
-        alert.addTextField { (textField : UITextField!) -> Void in
+        alert.addTextField { (textField : UITextField) -> Void in
             textField.delegate = self
             textField.placeholder = "Введите имя"
             textField.autocapitalizationType = .sentences
         }
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] (alertAction) in
             guard let name = alert.textFields?[0].text, name != "" else { return }
-            self?.players.append(name)
+            self?.viewModel.addPlayer(name)
             self?.collectionView.reloadData()
         }))
         alert.addAction(UIAlertAction(title: "Отмена", style: .cancel))
@@ -40,25 +45,33 @@ class PlayersViewController: UIViewController {
     }
     
     @IBAction func startGame(_ sender: UIButton) {
-        if players.count > 1 {
-            switch choosenGame {
-            case .truthOrDare:
-                performSegue(withIdentifier: "TruthOrDareViewController", sender: self)
-            default:
-                performSegue(withIdentifier: "ASettingsViewController", sender: self)
+        viewModel.prepareGameToStart { [unowned self] success in
+            if success {
+                switch viewModel.gameType {
+                case .truthOrDare:
+                    performSegue(withIdentifier: "TruthOrDareViewController", sender: nil)
+                case .alias:
+                    performSegue(withIdentifier: "ASettingsViewController", sender: nil)
+                case .neverI:
+                    break
+                }
+            } else {
+                showAlert(title: "Мало игроков ☹️", message: "Игроков должно быть минимум 2")
             }
-        } else {
-            showAlert(title: "Мало игроков ☹️", message: "Игроков должно быть минимум 2")
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "TruthOrDareViewController" {
-            let vc = segue.destination as? TruthOrDareViewController
-            vc?.players = players
+            if let vc = segue.destination as? TruthOrDareViewController {
+                // TODO: - Вместо players передавать во viewModel
+                vc.players = viewModel.players
+            }
         } else {
-            let vc = segue.destination as? ASettingsViewController
-            vc?.teams = players
+            if let vc = segue.destination as? ASettingsViewController {
+                // TODO: - Вместо teams передавать во viewModel
+                vc.teams = viewModel.players
+            }
         }
     }
     
@@ -78,30 +91,24 @@ extension PlayersViewController: UITextFieldDelegate {
 
 extension PlayersViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return players.count
+        return viewModel.numberOfRows
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PlayerCell.id, for: indexPath) as! PlayerCell
-        cell.name.text = players[indexPath.row]
-        cell.deleteButton.tag = indexPath.row
-        cell.deleteButton.addTarget(self, action: #selector(deleteRow(sender: )), for: .touchUpInside)
+        cell.viewModel = viewModel.cellViewModel(at: indexPath)
+        cell.viewModel.deleteDidSelect = { [unowned self] indexPath in
+            viewModel.removePlayer(at: indexPath)
+            collectionView.performBatchUpdates({
+                collectionView.deleteItems(at: [indexPath])
+            }) { (finished) in
+                collectionView.reloadData()
+            }
+        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width - 32, height: 61)
     }
-    
-    @objc func deleteRow(sender: UIButton) {
-        let indexPath = IndexPath(row: sender.tag, section: 0)
-        players.remove(at: indexPath.row)
-        
-        self.collectionView.performBatchUpdates({
-            self.collectionView.deleteItems(at: [indexPath])
-        }) { (finished) in
-            self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)
-        }
-    }
-    
 }

@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("Dare: ", Questions.dareList.count)
         return true
     }
-
-
-
+    
 }
 

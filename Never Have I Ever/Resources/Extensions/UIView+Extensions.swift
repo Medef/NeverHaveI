@@ -8,15 +8,6 @@
 
 import UIKit
 
-class DesignableView: UIView {
-}
-
-class DesignableButton: UIButton {
-}
-
-class DesignableLabel: UILabel {
-}
-
 extension UIView {
     
     @IBInspectable

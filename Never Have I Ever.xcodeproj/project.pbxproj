@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		1AB24E1587ADD48CF7C992E1 /* Pods_Never_Have_I_Ever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC8249B39327EEFA53C9B3 /* Pods_Never_Have_I_Ever.framework */; };
 		D20E7DDD24CE1E69001FDC9D /* ChooseGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E7DDC24CE1E69001FDC9D /* ChooseGameViewController.swift */; };
-		D229B25C245EFCAB00B48512 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229B25B245EFCAB00B48512 /* View.swift */; };
+		D229B25C245EFCAB00B48512 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229B25B245EFCAB00B48512 /* UIView+Extensions.swift */; };
 		D229B260245F11F900B48512 /* TruthOrDareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229B25F245F11F900B48512 /* TruthOrDareViewController.swift */; };
 		D22AB522240BC32100F395EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22AB521240BC32100F395EA /* AppDelegate.swift */; };
 		D22AB526240BC32100F395EA /* NeverIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22AB525240BC32100F395EA /* NeverIViewController.swift */; };
 		D22AB529240BC32100F395EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22AB527240BC32100F395EA /* Main.storyboard */; };
 		D22AB52B240BC32200F395EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22AB52A240BC32200F395EA /* Assets.xcassets */; };
 		D22AB52E240BC32200F395EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22AB52C240BC32200F395EA /* LaunchScreen.storyboard */; };
-		D22AB537240BD62100F395EA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22AB536240BD62100F395EA /* String.swift */; };
-		D28201D325EAC5B900709B2E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28201D225EAC5B900709B2E /* UIViewController.swift */; };
+		D22AB537240BD62100F395EA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22AB536240BD62100F395EA /* String+Extensions.swift */; };
+		D28201D325EAC5B900709B2E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28201D225EAC5B900709B2E /* UIViewController+Extensions.swift */; };
 		D28201DA25EAC95B00709B2E /* ChooseGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28201D825EAC95B00709B2E /* ChooseGameCell.swift */; };
 		D28201DB25EAC95B00709B2E /* ChooseGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D28201D925EAC95B00709B2E /* ChooseGameCell.xib */; };
 		D288D94D24DF39E800594A63 /* ASettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288D94C24DF39E800594A63 /* ASettingsViewController.swift */; };
 		D288D94F24DF3DBC00594A63 /* WordsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288D94E24DF3DBC00594A63 /* WordsCell.swift */; };
 		D288D95224DF408000594A63 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288D95124DF408000594A63 /* TimeCell.swift */; };
 		D288D95424DF42FC00594A63 /* MissWordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D288D95324DF42FC00594A63 /* MissWordCell.swift */; };
+		D28CC96627F2FF9B003BEA6A /* TruthOrDareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28CC96527F2FF9B003BEA6A /* TruthOrDareViewModel.swift */; };
+		D28F323A27F1C2EE0093F9EE /* CollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F323927F1C2EE0093F9EE /* CollectionViewCellProtocol.swift */; };
+		D28F323C27F1C3080093F9EE /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F323B27F1C3080093F9EE /* TableViewCellProtocol.swift */; };
+		D28F324027F1CA1F0093F9EE /* PlayersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F323F27F1CA1F0093F9EE /* PlayersViewModel.swift */; };
+		D28F324227F1DAA70093F9EE /* PlayerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F324127F1DAA70093F9EE /* PlayerCellViewModel.swift */; };
+		D28F324527F207F50093F9EE /* NeverIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F324427F207F50093F9EE /* NeverIViewModel.swift */; };
+		D2A925BA27EFCA79005C4413 /* ChooseGameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A925B927EFCA79005C4413 /* ChooseGameCellViewModel.swift */; };
+		D2A925BC27F07FA6005C4413 /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A925BB27F07FA6005C4413 /* GameType.swift */; };
+		D2A925BE27F07FEB005C4413 /* ChooseGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A925BD27F07FEB005C4413 /* ChooseGameViewModel.swift */; };
 		D2B01AED245EF41B0022665B /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B01AEC245EF41B0022665B /* PlayersViewController.swift */; };
 		D2B01AF1245EF5520022665B /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B01AEF245EF5520022665B /* PlayerCell.swift */; };
 		D2B01AF2245EF5520022665B /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B01AF0245EF5520022665B /* PlayerCell.xib */; };
@@ -38,7 +47,7 @@
 		878B4A7CCEB484D9509E13C6 /* Pods-Never Have I Ever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Never Have I Ever.release.xcconfig"; path = "Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever.release.xcconfig"; sourceTree = "<group>"; };
 		A9BC8249B39327EEFA53C9B3 /* Pods_Never_Have_I_Ever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Never_Have_I_Ever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E7DDC24CE1E69001FDC9D /* ChooseGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameViewController.swift; sourceTree = "<group>"; };
-		D229B25B245EFCAB00B48512 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		D229B25B245EFCAB00B48512 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D229B25F245F11F900B48512 /* TruthOrDareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareViewController.swift; sourceTree = "<group>"; };
 		D22AB51E240BC32100F395EA /* Я никогда не.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Я никогда не.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22AB521240BC32100F395EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,14 +56,23 @@
 		D22AB52A240BC32200F395EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D22AB52D240BC32200F395EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D22AB52F240BC32200F395EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D22AB536240BD62100F395EA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		D28201D225EAC5B900709B2E /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D22AB536240BD62100F395EA /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D28201D225EAC5B900709B2E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D28201D825EAC95B00709B2E /* ChooseGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameCell.swift; sourceTree = "<group>"; };
 		D28201D925EAC95B00709B2E /* ChooseGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseGameCell.xib; sourceTree = "<group>"; };
 		D288D94C24DF39E800594A63 /* ASettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASettingsViewController.swift; sourceTree = "<group>"; };
 		D288D94E24DF3DBC00594A63 /* WordsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCell.swift; sourceTree = "<group>"; };
 		D288D95124DF408000594A63 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
 		D288D95324DF42FC00594A63 /* MissWordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissWordCell.swift; sourceTree = "<group>"; };
+		D28CC96527F2FF9B003BEA6A /* TruthOrDareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareViewModel.swift; sourceTree = "<group>"; };
+		D28F323927F1C2EE0093F9EE /* CollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellProtocol.swift; sourceTree = "<group>"; };
+		D28F323B27F1C3080093F9EE /* TableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocol.swift; sourceTree = "<group>"; };
+		D28F323F27F1CA1F0093F9EE /* PlayersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewModel.swift; sourceTree = "<group>"; };
+		D28F324127F1DAA70093F9EE /* PlayerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellViewModel.swift; sourceTree = "<group>"; };
+		D28F324427F207F50093F9EE /* NeverIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeverIViewModel.swift; sourceTree = "<group>"; };
+		D2A925B927EFCA79005C4413 /* ChooseGameCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameCellViewModel.swift; sourceTree = "<group>"; };
+		D2A925BB27F07FA6005C4413 /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+		D2A925BD27F07FEB005C4413 /* ChooseGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameViewModel.swift; sourceTree = "<group>"; };
 		D2B01AEC245EF41B0022665B /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		D2B01AEF245EF5520022665B /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		D2B01AF0245EF5520022665B /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
@@ -96,8 +114,9 @@
 		D20E7DD824CE1DCB001FDC9D /* ChooseGame */ = {
 			isa = PBXGroup;
 			children = (
-				D20E7DDB24CE1E21001FDC9D /* Controller */,
+				D28F323627F1C2300093F9EE /* ViewModel */,
 				D20E7DDA24CE1E1B001FDC9D /* View */,
+				D2A925BB27F07FA6005C4413 /* GameType.swift */,
 			);
 			path = ChooseGame;
 			sourceTree = "<group>";
@@ -105,34 +124,27 @@
 		D20E7DDA24CE1E1B001FDC9D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D28201D825EAC95B00709B2E /* ChooseGameCell.swift */,
-				D28201D925EAC95B00709B2E /* ChooseGameCell.xib */,
+				D20E7DDC24CE1E69001FDC9D /* ChooseGameViewController.swift */,
+				D28F323727F1C25C0093F9EE /* ChooseGameCell */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		D20E7DDB24CE1E21001FDC9D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D20E7DDC24CE1E69001FDC9D /* ChooseGameViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		D229B25D245F11BA00B48512 /* TruthOrDare */ = {
 			isa = PBXGroup;
 			children = (
-				D229B25E245F11D000B48512 /* Controller */,
+				D28CC96427F2FF70003BEA6A /* ViewModel */,
+				D229B25E245F11D000B48512 /* View */,
 			);
 			path = TruthOrDare;
 			sourceTree = "<group>";
 		};
-		D229B25E245F11D000B48512 /* Controller */ = {
+		D229B25E245F11D000B48512 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D229B25F245F11F900B48512 /* TruthOrDareViewController.swift */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		D22AB515240BC32100F395EA = {
@@ -157,11 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				D2E34635240BEE5000A2D135 /* Resources */,
-				D22AB535240BD60600F395EA /* Extensions */,
 				D2C6C5D224126F1F006A7B33 /* Welcome */,
 				D20E7DD824CE1DCB001FDC9D /* ChooseGame */,
 				D2B01AEA245EF3E10022665B /* Players */,
-				D29DB68C240E5C420066CB2A /* NeverIHaveEver */,
+				D29DB68C240E5C420066CB2A /* NeverI */,
 				D229B25D245F11BA00B48512 /* TruthOrDare */,
 				D288D94924DF394A00594A63 /* AliasSettings */,
 				D22AB521240BC32100F395EA /* AppDelegate.swift */,
@@ -176,9 +187,9 @@
 		D22AB535240BD60600F395EA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D22AB536240BD62100F395EA /* String.swift */,
-				D229B25B245EFCAB00B48512 /* View.swift */,
-				D28201D225EAC5B900709B2E /* UIViewController.swift */,
+				D22AB536240BD62100F395EA /* String+Extensions.swift */,
+				D229B25B245EFCAB00B48512 /* UIView+Extensions.swift */,
+				D28201D225EAC5B900709B2E /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,21 +221,83 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D29DB68C240E5C420066CB2A /* NeverIHaveEver */ = {
+		D28CC96427F2FF70003BEA6A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D28CC96527F2FF9B003BEA6A /* TruthOrDareViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D28F323627F1C2300093F9EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2A925BD27F07FEB005C4413 /* ChooseGameViewModel.swift */,
+				D2A925B927EFCA79005C4413 /* ChooseGameCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D28F323727F1C25C0093F9EE /* ChooseGameCell */ = {
+			isa = PBXGroup;
+			children = (
+				D28201D825EAC95B00709B2E /* ChooseGameCell.swift */,
+				D28201D925EAC95B00709B2E /* ChooseGameCell.xib */,
+			);
+			path = ChooseGameCell;
+			sourceTree = "<group>";
+		};
+		D28F323827F1C2DC0093F9EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D28F323927F1C2EE0093F9EE /* CollectionViewCellProtocol.swift */,
+				D28F323B27F1C3080093F9EE /* TableViewCellProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D28F323D27F1C9EF0093F9EE /* PlayerCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2B01AEF245EF5520022665B /* PlayerCell.swift */,
+				D2B01AF0245EF5520022665B /* PlayerCell.xib */,
+			);
+			path = PlayerCell;
+			sourceTree = "<group>";
+		};
+		D28F323E27F1C9FE0093F9EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D28F323F27F1CA1F0093F9EE /* PlayersViewModel.swift */,
+				D28F324127F1DAA70093F9EE /* PlayerCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D28F324327F207CE0093F9EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D28F324427F207F50093F9EE /* NeverIViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D29DB68C240E5C420066CB2A /* NeverI */ = {
 			isa = PBXGroup;
 			children = (
 				D29DB68E240E5C790066CB2A /* Model */,
-				D29DB68D240E5C6E0066CB2A /* Controller */,
+				D29DB68D240E5C6E0066CB2A /* View */,
+				D28F324327F207CE0093F9EE /* ViewModel */,
 			);
-			path = NeverIHaveEver;
+			path = NeverI;
 			sourceTree = "<group>";
 		};
-		D29DB68D240E5C6E0066CB2A /* Controller */ = {
+		D29DB68D240E5C6E0066CB2A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D22AB525240BC32100F395EA /* NeverIViewController.swift */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		D29DB68E240E5C790066CB2A /* Model */ = {
@@ -238,25 +311,17 @@
 		D2B01AEA245EF3E10022665B /* Players */ = {
 			isa = PBXGroup;
 			children = (
+				D28F323E27F1C9FE0093F9EE /* ViewModel */,
 				D2B01AEE245EF5300022665B /* View */,
-				D2B01AEB245EF3F80022665B /* Controller */,
 			);
 			path = Players;
-			sourceTree = "<group>";
-		};
-		D2B01AEB245EF3F80022665B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D2B01AEC245EF41B0022665B /* PlayersViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		D2B01AEE245EF5300022665B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D2B01AEF245EF5520022665B /* PlayerCell.swift */,
-				D2B01AF0245EF5520022665B /* PlayerCell.xib */,
+				D2B01AEC245EF41B0022665B /* PlayersViewController.swift */,
+				D28F323D27F1C9EF0093F9EE /* PlayerCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +345,8 @@
 		D2E34635240BEE5000A2D135 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D28F323827F1C2DC0093F9EE /* Protocols */,
+				D22AB535240BD60600F395EA /* Extensions */,
 				D2E34636240BF0CF00A2D135 /* Questions.swift */,
 				D2F7C927240ECE5500E03D3C /* Throttler.swift */,
 			);
@@ -403,23 +470,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D22AB537240BD62100F395EA /* String.swift in Sources */,
+				D22AB537240BD62100F395EA /* String+Extensions.swift in Sources */,
+				D28CC96627F2FF9B003BEA6A /* TruthOrDareViewModel.swift in Sources */,
 				D2B01AF1245EF5520022665B /* PlayerCell.swift in Sources */,
 				D28201DA25EAC95B00709B2E /* ChooseGameCell.swift in Sources */,
-				D28201D325EAC5B900709B2E /* UIViewController.swift in Sources */,
-				D229B25C245EFCAB00B48512 /* View.swift in Sources */,
+				D28201D325EAC5B900709B2E /* UIViewController+Extensions.swift in Sources */,
+				D229B25C245EFCAB00B48512 /* UIView+Extensions.swift in Sources */,
 				D288D95224DF408000594A63 /* TimeCell.swift in Sources */,
 				D2F7C928240ECE5500E03D3C /* Throttler.swift in Sources */,
 				D2F7C92A240EE6E500E03D3C /* PreviousQuestion.swift in Sources */,
+				D28F323A27F1C2EE0093F9EE /* CollectionViewCellProtocol.swift in Sources */,
 				D2E34637240BF0CF00A2D135 /* Questions.swift in Sources */,
 				D22AB526240BC32100F395EA /* NeverIViewController.swift in Sources */,
+				D2A925BA27EFCA79005C4413 /* ChooseGameCellViewModel.swift in Sources */,
+				D2A925BE27F07FEB005C4413 /* ChooseGameViewModel.swift in Sources */,
+				D28F323C27F1C3080093F9EE /* TableViewCellProtocol.swift in Sources */,
 				D2B01AED245EF41B0022665B /* PlayersViewController.swift in Sources */,
 				D288D94F24DF3DBC00594A63 /* WordsCell.swift in Sources */,
+				D2A925BC27F07FA6005C4413 /* GameType.swift in Sources */,
+				D28F324527F207F50093F9EE /* NeverIViewModel.swift in Sources */,
 				D229B260245F11F900B48512 /* TruthOrDareViewController.swift in Sources */,
 				D22AB522240BC32100F395EA /* AppDelegate.swift in Sources */,
 				D288D94D24DF39E800594A63 /* ASettingsViewController.swift in Sources */,
 				D288D95424DF42FC00594A63 /* MissWordCell.swift in Sources */,
+				D28F324027F1CA1F0093F9EE /* PlayersViewModel.swift in Sources */,
 				D2C6C5D724126FA0006A7B33 /* WelcomeViewController.swift in Sources */,
+				D28F324227F1DAA70093F9EE /* PlayerCellViewModel.swift in Sources */,
 				D20E7DDD24CE1E69001FDC9D /* ChooseGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,7 +647,7 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 4X4HAH2D2G;
 				INFOPLIST_FILE = "Never Have I Ever/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +668,7 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 4X4HAH2D2G;
 				INFOPLIST_FILE = "Never Have I Ever/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

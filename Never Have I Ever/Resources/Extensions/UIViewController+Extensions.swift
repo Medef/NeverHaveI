@@ -15,17 +15,15 @@ extension UIViewController {
         self.navigationController?.navigationBar.layoutIfNeeded()
     }
     
-    final func showAlert(title: String, message: String, actions: [UIAlertAction]? = nil) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    final func showAlert(title: String? = nil, message: String? = nil, style: UIAlertController.Style = .alert, actions: [UIAlertAction]? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         guard let actions = actions else {
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             present(alert, animated: true)
             return
         }
-        if !actions.isEmpty {
-            for action in actions {
-                alert.addAction(action)
-            }
+        for action in actions {
+            alert.addAction(action)
         }
         present(alert, animated: true)
     }

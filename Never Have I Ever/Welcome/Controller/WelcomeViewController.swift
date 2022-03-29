@@ -10,20 +10,28 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
-    @IBOutlet weak var mainImage: UIImageView!
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var aboutButton: UIButton!
-    @IBOutlet weak var message: UILabel!
+    @IBOutlet private weak var mainImage: UIImageView!
+    @IBOutlet private weak var playButton: UIButton!
+    @IBOutlet private weak var aboutButton: UIButton!
+    @IBOutlet private weak var message: UILabel!
     
     private var counter = 0
     
-    // MARK: - Добавляем фичу Настя + Женя = ❤️
-    
-    func addFeature() {
-        mainImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showMessage)))
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureUI()
+        removeBorder()
     }
     
-    @objc func showMessage() {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        message.frame = CGRect(x: 0, y: 525.5, width: 530, height: 21)
+        counter = 0
+        message.isHidden = true
+    }
+    
+    // MARK: - Добавляем фичу Настя + Женя = ❤️
+    @objc private func showMessage() {
         counter += 1
         if counter == 10 {
             message.isHidden = false
@@ -36,22 +44,13 @@ class WelcomeViewController: UIViewController {
         }
     }
     
-    func configureUI() {
+    private func addFeature() {
+        mainImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showMessage)))
+    }
+    
+    private func configureUI() {
         message.isHidden = true
         addFeature()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        message.frame = CGRect(x: 0, y: 525.5, width: 530, height: 21)
-        counter = 0
-        message.isHidden = true
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configureUI()
-        removeBorder()
     }
 
 }

@@ -10,14 +10,14 @@ import UIKit
 
 class TruthOrDareViewController: UIViewController {
     
-    @IBOutlet weak var player: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var question: UILabel!
-    @IBOutlet weak var readyButton: UIButton!
-    @IBOutlet weak var truthDareStack: UIStackView!
-    @IBOutlet weak var truthButton: UIButton!
-    @IBOutlet weak var dareButton: UIButton!
-    @IBOutlet weak var randomButton: UIButton!
+    @IBOutlet private weak var player: UILabel!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var question: UILabel!
+    @IBOutlet private weak var readyButton: UIButton!
+    @IBOutlet private weak var truthDareStack: UIStackView!
+    @IBOutlet private weak var truthButton: UIButton!
+    @IBOutlet private weak var dareButton: UIButton!
+    @IBOutlet private weak var randomButton: UIButton!
     
     var players: [String] = []
     
