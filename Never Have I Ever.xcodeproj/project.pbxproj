@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AB24E1587ADD48CF7C992E1 /* Pods_Never_Have_I_Ever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC8249B39327EEFA53C9B3 /* Pods_Never_Have_I_Ever.framework */; };
 		D20E7DDD24CE1E69001FDC9D /* ChooseGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E7DDC24CE1E69001FDC9D /* ChooseGameViewController.swift */; };
+		D2145D3D27F62B9700B533E8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2145D3C27F62B9700B533E8 /* Color.swift */; };
 		D229B25C245EFCAB00B48512 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229B25B245EFCAB00B48512 /* UIView+Extensions.swift */; };
 		D229B260245F11F900B48512 /* TruthOrDareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229B25F245F11F900B48512 /* TruthOrDareViewController.swift */; };
 		D22AB522240BC32100F395EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22AB521240BC32100F395EA /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 		D22AB52B240BC32200F395EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22AB52A240BC32200F395EA /* Assets.xcassets */; };
 		D22AB52E240BC32200F395EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22AB52C240BC32200F395EA /* LaunchScreen.storyboard */; };
 		D22AB537240BD62100F395EA /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22AB536240BD62100F395EA /* String+Extensions.swift */; };
+		D23D9D6827F649AC0017BEA2 /* TruthOrDareState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D9D6727F649AC0017BEA2 /* TruthOrDareState.swift */; };
 		D28201D325EAC5B900709B2E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28201D225EAC5B900709B2E /* UIViewController+Extensions.swift */; };
 		D28201DA25EAC95B00709B2E /* ChooseGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28201D825EAC95B00709B2E /* ChooseGameCell.swift */; };
 		D28201DB25EAC95B00709B2E /* ChooseGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D28201D925EAC95B00709B2E /* ChooseGameCell.xib */; };
@@ -47,6 +49,7 @@
 		878B4A7CCEB484D9509E13C6 /* Pods-Never Have I Ever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Never Have I Ever.release.xcconfig"; path = "Target Support Files/Pods-Never Have I Ever/Pods-Never Have I Ever.release.xcconfig"; sourceTree = "<group>"; };
 		A9BC8249B39327EEFA53C9B3 /* Pods_Never_Have_I_Ever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Never_Have_I_Ever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E7DDC24CE1E69001FDC9D /* ChooseGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameViewController.swift; sourceTree = "<group>"; };
+		D2145D3C27F62B9700B533E8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		D229B25B245EFCAB00B48512 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		D229B25F245F11F900B48512 /* TruthOrDareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareViewController.swift; sourceTree = "<group>"; };
 		D22AB51E240BC32100F395EA /* Я никогда не.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Я никогда не.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +60,7 @@
 		D22AB52D240BC32200F395EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D22AB52F240BC32200F395EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D22AB536240BD62100F395EA /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D23D9D6727F649AC0017BEA2 /* TruthOrDareState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthOrDareState.swift; sourceTree = "<group>"; };
 		D28201D225EAC5B900709B2E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D28201D825EAC95B00709B2E /* ChooseGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGameCell.swift; sourceTree = "<group>"; };
 		D28201D925EAC95B00709B2E /* ChooseGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseGameCell.xib; sourceTree = "<group>"; };
@@ -114,9 +118,9 @@
 		D20E7DD824CE1DCB001FDC9D /* ChooseGame */ = {
 			isa = PBXGroup;
 			children = (
-				D28F323627F1C2300093F9EE /* ViewModel */,
+				D2145D3A27F6273300B533E8 /* Model */,
 				D20E7DDA24CE1E1B001FDC9D /* View */,
-				D2A925BB27F07FA6005C4413 /* GameType.swift */,
+				D28F323627F1C2300093F9EE /* ViewModel */,
 			);
 			path = ChooseGame;
 			sourceTree = "<group>";
@@ -130,9 +134,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D2145D3A27F6273300B533E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2A925BB27F07FA6005C4413 /* GameType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2145D3B27F62B8500B533E8 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				D2145D3C27F62B9700B533E8 /* Color.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
 		D229B25D245F11BA00B48512 /* TruthOrDare */ = {
 			isa = PBXGroup;
 			children = (
+				D23D9D6627F649A10017BEA2 /* Model */,
 				D28CC96427F2FF70003BEA6A /* ViewModel */,
 				D229B25E245F11D000B48512 /* View */,
 			);
@@ -192,6 +213,14 @@
 				D28201D225EAC5B900709B2E /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D23D9D6627F649A10017BEA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D23D9D6727F649AC0017BEA2 /* TruthOrDareState.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D288D94924DF394A00594A63 /* AliasSettings */ = {
@@ -329,22 +358,23 @@
 		D2C6C5D224126F1F006A7B33 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				D2C6C5D524126F4D006A7B33 /* Controller */,
+				D2C6C5D524126F4D006A7B33 /* View */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		D2C6C5D524126F4D006A7B33 /* Controller */ = {
+		D2C6C5D524126F4D006A7B33 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				D2C6C5D624126FA0006A7B33 /* WelcomeViewController.swift */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		D2E34635240BEE5000A2D135 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D2145D3B27F62B8500B533E8 /* Style */,
 				D28F323827F1C2DC0093F9EE /* Protocols */,
 				D22AB535240BD60600F395EA /* Extensions */,
 				D2E34636240BF0CF00A2D135 /* Questions.swift */,
@@ -479,10 +509,12 @@
 				D288D95224DF408000594A63 /* TimeCell.swift in Sources */,
 				D2F7C928240ECE5500E03D3C /* Throttler.swift in Sources */,
 				D2F7C92A240EE6E500E03D3C /* PreviousQuestion.swift in Sources */,
+				D2145D3D27F62B9700B533E8 /* Color.swift in Sources */,
 				D28F323A27F1C2EE0093F9EE /* CollectionViewCellProtocol.swift in Sources */,
 				D2E34637240BF0CF00A2D135 /* Questions.swift in Sources */,
 				D22AB526240BC32100F395EA /* NeverIViewController.swift in Sources */,
 				D2A925BA27EFCA79005C4413 /* ChooseGameCellViewModel.swift in Sources */,
+				D23D9D6827F649AC0017BEA2 /* TruthOrDareState.swift in Sources */,
 				D2A925BE27F07FEB005C4413 /* ChooseGameViewModel.swift in Sources */,
 				D28F323C27F1C3080093F9EE /* TableViewCellProtocol.swift in Sources */,
 				D2B01AED245EF41B0022665B /* PlayersViewController.swift in Sources */,

@@ -12,7 +12,7 @@ protocol ChooseGameCellViewModelProtocol: AnyObject {
     var gameName: String { get }
     var gameDescription: String { get }
     var gameType: GameType { get }
-    var gameDidSelect: ((_ gameType: GameType) -> ())? { get set }
+    var gameDidSelect: ((_ gameType: GameType) -> Void)? { get set }
     init(game: GameType)
 }
 
@@ -31,7 +31,7 @@ class ChooseGameCellViewModel: ChooseGameCellViewModelProtocol {
         game
     }
     
-    var gameDidSelect: ((_ gameType: GameType) -> ())?
+    var gameDidSelect: ((_ gameType: GameType) -> Void)?
     
     required init(game: GameType) {
         self.game = game

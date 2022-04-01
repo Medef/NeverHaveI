@@ -13,8 +13,8 @@ protocol NeverIViewModelProtocol {
     var questions: [String] { get }
     var currentQuestion: String { get }
     var titleForQuestion: String { get }
-    func prepareNextQuestion(_ completion: ((_ questionsOver: Bool) -> ())?)
-    func preparePreviousQuestion(_ completion: ((_ success: Bool) -> ())?)
+    func prepareNextQuestion(_ completion: ((_ questionsOver: Bool) -> Void)?)
+    func preparePreviousQuestion(_ completion: ((_ success: Bool) -> Void)?)
 }
 
 class NeverIViewModel: NeverIViewModelProtocol {
@@ -30,7 +30,7 @@ class NeverIViewModel: NeverIViewModelProtocol {
         return questions[questionIndex][0...3] == "было" ? "У меня никогда не..." : "Я никогда не..."
     }
     
-    func prepareNextQuestion(_ completion: ((Bool) -> ())?) {
+    func prepareNextQuestion(_ completion: ((Bool) -> Void)?) {
         if questionIndex != questions.count - 1 {
             questionIndex += 1
         } else {
@@ -40,7 +40,7 @@ class NeverIViewModel: NeverIViewModelProtocol {
         completion?(questionIndex == questions.count - 1)
     }
     
-    func preparePreviousQuestion(_ completion: ((Bool) -> ())?) {
+    func preparePreviousQuestion(_ completion: ((Bool) -> Void)?) {
         if questionIndex != 0 {
             questionIndex -= 1
             completion?(true)

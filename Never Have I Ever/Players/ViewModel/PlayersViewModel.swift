@@ -13,7 +13,7 @@ protocol PlayersViewModelProtocol: AnyObject {
     var gameType: GameType { get }
     var numberOfRows: Int { get }
     func addPlayer(_ name: String)
-    func prepareGameToStart(completion: ((_ success: Bool) -> ())?)
+    func prepareGameToStart(completion: ((_ success: Bool) -> Void)?)
     func cellViewModel(at indexPath: IndexPath) -> PlayerCellViewModelProtocol
     func removePlayer(at indexPath: IndexPath)
     init(_ gameType: GameType)
@@ -46,7 +46,7 @@ class PlayersViewModel: PlayersViewModelProtocol {
         players.append(name)
     }
     
-    func prepareGameToStart(completion: ((_ success: Bool) -> ())?) {
+    func prepareGameToStart(completion: ((_ success: Bool) -> Void)?) {
         if players.count > 1 {
             completion?(true)
         } else {

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol PlayerCellViewModelProtocol: AnyObject {
-    var deleteDidSelect: ((_ indexPath: IndexPath) -> ())? { get set }
+    var deleteDidSelect: ((_ indexPath: IndexPath) -> Void)? { get set }
     var player: String { get }
     var indexPath: IndexPath { get }
     init(player: String, at indexPath: IndexPath)
@@ -21,7 +21,7 @@ class PlayerCellViewModel: PlayerCellViewModelProtocol {
     
     var player: String
     
-    var deleteDidSelect: ((_ indexPath: IndexPath) -> ())?
+    var deleteDidSelect: ((_ indexPath: IndexPath) -> Void)?
     
     required init(player: String, at indexPath: IndexPath) {
         self.player = player

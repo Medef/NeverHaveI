@@ -64,12 +64,10 @@ class PlayersViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "TruthOrDareViewController" {
             if let vc = segue.destination as? TruthOrDareViewController {
-                // TODO: - Вместо players передавать во viewModel
-                vc.players = viewModel.players
+                vc.viewModel = TruthOrDareViewModel(players: viewModel.players)
             }
         } else {
             if let vc = segue.destination as? ASettingsViewController {
-                // TODO: - Вместо teams передавать во viewModel
                 vc.teams = viewModel.players
             }
         }
