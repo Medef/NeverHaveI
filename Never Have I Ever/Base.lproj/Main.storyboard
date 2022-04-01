@@ -17,12 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="При поддержке @daminik00 @medef00 @nastasyaax" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-F8-4oc">
-                                <rect key="frame" x="53" y="774.5" width="308" height="87.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-7H-7v1">
                                 <rect key="frame" x="96.5" y="546.5" width="221" height="55"/>
                                 <color key="backgroundColor" name="orangeYellow"/>
@@ -64,30 +58,17 @@
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wine" translatesAutoresizingMaskIntoConstraints="NO" id="mhS-Ld-PeJ">
                                 <rect key="frame" x="0.0" y="108" width="414" height="268.5"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gty-xw-OXL">
-                                <rect key="frame" x="0.0" y="738" width="569" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nPh-mj-hMN"/>
                         <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5g6-7H-7v1" firstAttribute="centerX" secondItem="nPh-mj-hMN" secondAttribute="centerX" id="55k-Eu-SXX"/>
-                            <constraint firstItem="gty-xw-OXL" firstAttribute="leading" secondItem="nPh-mj-hMN" secondAttribute="leading" id="5Y8-Rq-jvK"/>
-                            <constraint firstItem="0Rl-F8-4oc" firstAttribute="top" secondItem="gty-xw-OXL" secondAttribute="bottom" constant="16" id="Fhc-w5-TVs"/>
                             <constraint firstItem="mhS-Ld-PeJ" firstAttribute="leading" secondItem="nPh-mj-hMN" secondAttribute="leading" id="Fjv-mb-LWe"/>
                             <constraint firstItem="mhS-Ld-PeJ" firstAttribute="trailing" secondItem="nPh-mj-hMN" secondAttribute="trailing" id="J1z-RF-DS5"/>
                             <constraint firstItem="mhS-Ld-PeJ" firstAttribute="top" secondItem="nPh-mj-hMN" secondAttribute="top" constant="20" id="KkU-bi-SAb"/>
-                            <constraint firstItem="0Rl-F8-4oc" firstAttribute="bottom" secondItem="nPh-mj-hMN" secondAttribute="bottom" id="Nwq-qw-hjh"/>
-                            <constraint firstItem="0Rl-F8-4oc" firstAttribute="height" secondItem="77M-aZ-WSg" secondAttribute="height" multiplier="0.0974513" id="OLg-Gf-Orj"/>
                             <constraint firstItem="mhS-Ld-PeJ" firstAttribute="height" secondItem="77M-aZ-WSg" secondAttribute="height" multiplier="0.29985" id="PrJ-ID-Rrs"/>
-                            <constraint firstItem="nPh-mj-hMN" firstAttribute="trailing" secondItem="0Rl-F8-4oc" secondAttribute="trailing" constant="53" id="YaE-ZH-m3Q"/>
                             <constraint firstItem="VT1-l8-ykF" firstAttribute="centerX" secondItem="nPh-mj-hMN" secondAttribute="centerX" id="dKf-wM-Ndq"/>
-                            <constraint firstItem="nPh-mj-hMN" firstAttribute="trailing" secondItem="gty-xw-OXL" secondAttribute="trailing" constant="-155" id="dtH-Xr-b14"/>
                             <constraint firstItem="VT1-l8-ykF" firstAttribute="top" secondItem="mhS-Ld-PeJ" secondAttribute="bottom" constant="75" id="f50-v3-kxI"/>
-                            <constraint firstItem="0Rl-F8-4oc" firstAttribute="leading" secondItem="nPh-mj-hMN" secondAttribute="leading" constant="53" id="fOB-bm-GlC"/>
                             <constraint firstItem="5g6-7H-7v1" firstAttribute="top" secondItem="VT1-l8-ykF" secondAttribute="bottom" constant="40" id="kXe-IV-oEB"/>
                             <constraint firstItem="VT1-l8-ykF" firstAttribute="width" secondItem="77M-aZ-WSg" secondAttribute="width" multiplier="0.533333" id="m1l-wv-WFl"/>
                             <constraint firstItem="5g6-7H-7v1" firstAttribute="width" secondItem="77M-aZ-WSg" secondAttribute="width" multiplier="0.533333" id="ucc-H5-IPC"/>
@@ -99,7 +80,6 @@
                     <connections>
                         <outlet property="aboutButton" destination="5g6-7H-7v1" id="2NZ-11-2te"/>
                         <outlet property="mainImage" destination="mhS-Ld-PeJ" id="VXo-oa-ytq"/>
-                        <outlet property="message" destination="gty-xw-OXL" id="mXw-1z-ScE"/>
                         <outlet property="playButton" destination="VT1-l8-ykF" id="3tD-RI-ZF7"/>
                     </connections>
                 </viewController>
